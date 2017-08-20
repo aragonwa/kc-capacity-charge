@@ -1,4 +1,4 @@
-# ePayments Employee Giving
+# ePayments Capacity Charge
 [kc-capacity-charge.surge.sh](https://kc-capacity.surge.sh)
 
 # Updates 

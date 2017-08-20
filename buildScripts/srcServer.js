@@ -29,5 +29,5 @@ app.listen(port, err => {
     proxy: 'localhost:' + port,
     files: [path.join(__dirname, '../src/**')]
   });
-  (err) ? console.log(err) : open('http://localhost:' + port);
+  // (err) ? console.log(err) : open('http://localhost:' + port);
 });
