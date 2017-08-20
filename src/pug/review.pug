@@ -1,0 +1,110 @@
+extends includes/base
+block whichtheme
+  - var theme = 'corporate'
+block isfullwidth
+  - var colSize = 'col-md-12'
+block breadcrumb
+  // BREADCRUMB
+  include includes/breadcrumb
+block custom-style
+  if production
+    link(href="/css/custom.css" rel='stylesheet' type='text/css')
+  else
+    link(href="/styles/css/custom.css" rel='stylesheet' type='text/css')
+block main-content
+  .row.addon-row.addon-row-attached
+    .col-sm-12
+      .page-header
+        h1 Review/edit donation list
+      p
+        a(href="#")
+          span.fa.fa-arrow-left
+          | &nbsp;Back to search results
+  .row.addon-row.addon-row-attached
+    .col-sm-12
+      p
+        strong This list is for credit card and check payments. If you want to print the payroll donation list, go back to search results and choose "print list" from shopping cart.
+      br
+      .review-header
+        p
+          .fa.fa-shopping-cart &nbsp;
+          | Donation cart
+    .col-sm-12
+      .review-cart
+        .review-cart-items
+          .media
+            .media-left
+              .fa.fa-times-circle.fa-color-danger
+            .media-body
+              ul.leaders
+                li
+                  span Abused Deaf Women's Adovacy Services (9616)
+                  span
+                    .input-group
+                      div.input-group-addon $
+                      input.form-control(type="text" aria-label="Amount (to the nearest dollar)" value="585")
+                      div.input-group-addon .00
+                li.description General donation
+                li.description
+                  em "In honor of Josephine Tailor"
+                li.description Donated anonymously
+          .media
+            .media-left
+              .fa.fa-times-circle.fa-color-danger
+            .media-body
+              ul.leaders
+                li
+                  span American Red Cross Serving King County (3245)
+                  span
+                    .input-group
+                      div.input-group-addon $
+                      input.form-control(type="text" aria-label="Amount (to the nearest dollar)" value="200")
+                      div.input-group-addon .00
+                li.description General donation
+          .media
+            .media-left
+              .fa.fa-times-circle.fa-color-danger
+            .media-body
+              ul.leaders
+                li
+                  span American Red Cross Serving King County (3245)
+                  span
+                    .input-group
+                      div.input-group-addon $
+                      input.form-control(type="text" aria-label="Amount (to the nearest dollar)" value="25")
+                      div.input-group-addon .00
+                li.description March flood relief drive
+                li.description
+                  em "In honor of Josephine Tailor"
+          .media
+            .media-left
+              .fa.fa-times-circle.fa-color-danger
+            .media-body
+              ul.leaders
+                li
+                  span Angel Flight West (9615)
+                  span
+                    .input-group
+                      div.input-group-addon $
+                      input.form-control(type="text" aria-label="Amount (to the nearest dollar)" value="1,000")
+                      div.input-group-addon .00
+                li.description John Smith retirement
+                li.description Donated anonymously
+        .row.review-cart-total
+          .col-sm-6
+          .col-sm-6
+            .cart-totals
+              ul.leaders
+                li
+                  span Total
+                  span $2,345.00
+  .row.addon-row.addon-row-attached
+    .col-sm-12
+      p * There will be a service fee added at the time of payment based on the type of the payment chosen.
+    .col-sm-12
+      button.btn.btn-success Proceed to billing
+block custom-js
+  if production
+    script(src="/js/custom.js")
+  else
+    script(src="/js/custom.compiled.js")
