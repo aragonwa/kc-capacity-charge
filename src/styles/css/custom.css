@@ -158,7 +158,7 @@ button.onoffcanvas-toggler {
   animation: fadeIn 0.5s ease-in 1 forwards;
 }
 .panel.panel-accordion-primary-dark > .panel-heading {
-  background-color: #264c5d;
+  background-color: #435b3c;
   padding-right: 0;
   padding-left: 0;
   border-radius: 0;
@@ -344,19 +344,19 @@ ul.leaders .description:before {
   }
 }
 .employee-giving-events .employee-giving-event {
-  border: 1px solid #264c5d;
+  border: 1px solid #435b3c;
   padding: 5px 10px;
   margin-bottom: 0;
-  color: #264c5d;
+  color: #435b3c;
 }
 .employee-giving-events .employee-giving-event a .fa {
   padding-top: 2px;
 }
 .employee-giving-events .employee-giving-event.active {
-  border: 1px solid #264c5d;
+  border: 1px solid #435b3c;
   padding: 5px 10px;
   margin-bottom: 0;
-  background-color: #264c5d;
+  background-color: #435b3c;
   color: #FFFFFF;
 }
 .employee-giving-events .employee-giving-event.active a {
@@ -364,10 +364,10 @@ ul.leaders .description:before {
 }
 .employee-giving-search {
   padding: 0;
-  border: 1px solid #264c5d;
+  border: 1px solid #435b3c;
 }
 .employee-giving-search img {
-  border-bottom: 4px solid #264c5d;
+  border-bottom: 4px solid #435b3c;
 }
 .employee-giving-search .dropdown {
   display: inline;
@@ -387,8 +387,8 @@ ul.leaders .description:before {
   margin: 0;
 }
 .employee-giving-search-results-panels {
-  border-top: 4px solid #264c5d;
-  border-bottom: 4px solid #264c5d;
+  border-top: 4px solid #435b3c;
+  border-bottom: 4px solid #435b3c;
   padding-top: 20px;
 }
 .employee-giving-donation-list {
@@ -398,10 +398,10 @@ ul.leaders .description:before {
   border-bottom: 1px dotted #cccccc;
 }
 .employee-giving-donation-list .cart-title {
-  border-bottom: 2px solid #264c5d;
+  border-bottom: 2px solid #435b3c;
 }
 .employee-giving-donation-list .cart-items {
-  border-bottom: 2px solid #264c5d;
+  border-bottom: 2px solid #435b3c;
   margin-bottom: 20px;
 }
 .employee-giving-donation-list .cart-items li.description {
@@ -410,9 +410,20 @@ ul.leaders .description:before {
 .cart .cart-items ul.leaders {
   margin-bottom: 0;
 }
-.review-cart .review-cart-items .input-group {
+.capacity-charge-pay-now .input-group {
   width: 200px;
   font-weight: 400;
+}
+#capacity-charge-payment-summary .remaining-balance {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #435b3c;
+}
+#capacity-charge-payment-summary .remaining-balance ul.leaders li {
+  padding-bottom: 0;
+}
+#capacity-charge-payment-summary .amount-due {
+  padding-top: 10px;
+  border-top: 2px solid #435b3c;
 }
 .btn-custom {
   color: #000000;
