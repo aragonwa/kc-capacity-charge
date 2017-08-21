@@ -18,9 +18,16 @@ block main-content
         h1 Pay your Capacity Charge bill
   .row.addon-row.addon-row-attached
     .col-sm-12
+      .call-out-text.call-out-text-primary
+        p
+          span.fa.fa-exclamation-triangle
+          strong &nbsp;System status
+        p The payment system is currenlty down for schedule maintenance.
+  .row.addon-row.addon-row-attached
+    .col-sm-12
       .alert-primary
       .capacity-charge-search.call-out-text.call-out-text-success.m-t-0
-        - var searchDisabled = false;
+        - var searchDisabled = true;
         include searchInput
         p.m-t-md
           a(href="#" data-toggle="modal" data-target="#findSiteNumberModal") How do I find my account and site number?

@@ -4,16 +4,27 @@
       | Account number&nbsp;
       a(href="#")
         .fa.fa-question-circle
-    input.form-control(type="text" id="accountNumberSearch" name="accountNumberSearch" placeholder="Account number")
+    if(searchDisabled) 
+      input.form-control(type="text" id="accountNumberSearch"   name="accountNumberSearch" placeholder="Account number" disabled)
+    else
+      input.form-control(type="text" id="accountNumberSearch"   name="accountNumberSearch" placeholder="Account number")
   .col-sm-5
     label(for="siteNumberSearch") Site number&nbsp;
       a(href="#")
         .fa.fa-question-circle
-    input.form-control(type="text" id="siteNumberSearch" name="siteNumberSearch" placeholder="Site number")
+    if(searchDisabled)
+      input.form-control(type="text" id="siteNumberSearch" name="siteNumberSearch" placeholder="Site number" disabled)
+    else
+     input.form-control(type="text" id="siteNumberSearch" name="siteNumberSearch" placeholder="Site number")
   .col-sm-2
     label
       | &nbsp;
-    button.btn.btn-primary.btn-block
-      | Search&nbsp;
-      .fa.fa-search(aria-hidden="true")
+    if(searchDisabled)
+      button.btn.btn-primary.btn-block(disabled)
+        | Search&nbsp;
+        .fa.fa-search(aria-hidden="true")
+    else
+      button.btn.btn-primary.btn-block
+        | Search&nbsp;
+        .fa.fa-search(aria-hidden="true")
       span.sr-only Search account number or site number
