@@ -1,6 +1,6 @@
 extends includes/base
 block whichtheme
-  - var theme = 'corporate'
+  - var theme = 'environment'
 block isfullwidth
   - var colSize = 'col-md-12'
 block breadcrumb
@@ -15,20 +15,17 @@ block main-content
   .row.addon-row.addon-row-attached
     .col-sm-12
       .page-header
-        h1 Review/edit donation list
+        h1 Capacity charge review cart
       p
         a(href="#")
           span.fa.fa-arrow-left
           | &nbsp;Back to search results
   .row.addon-row.addon-row-attached
     .col-sm-12
-      p
-        strong This list is for credit card and check payments. If you want to print the payroll donation list, go back to search results and choose "print list" from shopping cart.
-      br
       .review-header
         p
           .fa.fa-shopping-cart &nbsp;
-          | Donation cart
+          | Confirm cart details
     .col-sm-12
       .review-cart
         .review-cart-items
@@ -38,69 +35,51 @@ block main-content
             .media-body
               ul.leaders
                 li
-                  span Abused Deaf Women's Adovacy Services (9616)
-                  span
-                    .input-group
-                      div.input-group-addon $
-                      input.form-control(type="text" aria-label="Amount (to the nearest dollar)" value="585")
-                      div.input-group-addon .00
-                li.description General donation
-                li.description
-                  em "In honor of Josephine Tailor"
-                li.description Donated anonymously
+                  span Account # 305671
+                  span $5,666.30
+                li.description Early discount amount
           .media
             .media-left
               .fa.fa-times-circle.fa-color-danger
             .media-body
               ul.leaders
                 li
-                  span American Red Cross Serving King County (3245)
-                  span
-                    .input-group
-                      div.input-group-addon $
-                      input.form-control(type="text" aria-label="Amount (to the nearest dollar)" value="200")
-                      div.input-group-addon .00
-                li.description General donation
+                  span Account # 234567
+                  span $155.85
+                li.description Amount due on 03/13/2017
           .media
             .media-left
               .fa.fa-times-circle.fa-color-danger
             .media-body
               ul.leaders
                 li
-                  span American Red Cross Serving King County (3245)
-                  span
-                    .input-group
-                      div.input-group-addon $
-                      input.form-control(type="text" aria-label="Amount (to the nearest dollar)" value="25")
-                      div.input-group-addon .00
-                li.description March flood relief drive
-                li.description
-                  em "In honor of Josephine Tailor"
-          .media
-            .media-left
-              .fa.fa-times-circle.fa-color-danger
-            .media-body
-              ul.leaders
-                li
-                  span Angel Flight West (9615)
-                  span
-                    .input-group
-                      div.input-group-addon $
-                      input.form-control(type="text" aria-label="Amount (to the nearest dollar)" value="1,000")
-                      div.input-group-addon .00
-                li.description John Smith retirement
-                li.description Donated anonymously
+                  span Account # 789345
+                  span $200.00
+                li.description Other (customer defined amount)
         .row.review-cart-total
           .col-sm-6
           .col-sm-6
             .cart-totals
               ul.leaders
+                li 
+                  span Subtotal
+                  span 5,666.39
+                li
+                  span Tax
+                  span $0
+              ul.leaders
                 li
                   span Total
-                  span $2,345.00
+                  span $5,666.39
   .row.addon-row.addon-row-attached
     .col-sm-12
-      p * There will be a service fee added at the time of payment based on the type of the payment chosen.
+      p.text-danger
+        span.fa.fa-asterisk
+        | &nbsp;Capacity charge cannot accept American Experss&nbsp;
+        span.fa.fa-cc-amex
+        | &nbsp;or Discover&nbsp; 
+        span.fa.fa-cc-discover
+        | &nbsp;card payments
     .col-sm-12
       button.btn.btn-success Proceed to billing
 block custom-js
