@@ -1,7 +1,17 @@
 # ePayments Capacity Charge
-[kc-capacity-charge.surge.sh](https://kc-capacity.surge.sh)
+[Bill details](https://kc-capacity.surge.sh)
 
-# Updates 
+[Receipt](https://kc-capacity.surge.sh/receipt)
+
+[Review cart](https://kc-capacity.surge.sh/review)
+
+[General search](https://kc-capacity.surge.sh/search)
+
+[Search: disabled state](https://kc-capacity.surge.sh/searchDisabled)
+
+# Updates
+8/21
+  * Initial push
 
 ## Where are the files I need?
 ```
@@ -11,5 +21,9 @@ dist/
 │   └── custom.css
 ├── js/
 │   └── custom.js
-└── index.html (search page)
+├── review.html
+├── receipt.html
+├── search.html
+├── searchDisabled.html
+└── index.html (bill details page)
 ```
