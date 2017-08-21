@@ -14,115 +14,39 @@ block main-content
   .row.addon-row.addon-row-attached
     .col-sm-12
       .page-header
-        h1 Find a non-profit
+        h1 Capacity charge bill details
     include offcanvas-cart
   .row.addon-row.addon-row-attached
     .col-sm-12.col-md-8
-      p.h5 CURRENT FUNDRAISING EVENTS
-      .row
-        .employee-giving-events
-          .col-sm-6.col-xs-12
-            p.employee-giving-event.active 
-              | General givings
-              a(href="#" data-toggle="modal" data-target="#eventsModal")
-                span.fa.fa-info-circle.pull-right
-          .col-sm-6.col-xs-12
-            p.employee-giving-event 
-              |  Northwest Harvest food drive
-              a(href="#" data-toggle="modal" data-target="#eventsModal")
-                span.fa.fa-info-circle.pull-right
-          .col-sm-6.col-xs-12
-            p.employee-giving-event
-              | Veterans relief drive
-              a(href="#" data-toggle="modal" data-target="#eventsModal")
-                span.fa.fa-info-circle.pull-right
-          .col-sm-6.col-xs-12
-            p.employee-giving-event
-              | Bob Smith retirement party
-              a(href="#" data-toggle="modal" data-target="#eventsModal")
-                span.fa.fa-info-circle.pull-right
-        include eventsModal
       .row
         .col-sm-12
-          .thumbnail.employee-giving-search
-            img(src="https://unsplash.it/750/116/?blur")
-            .caption
-              h2#employee-donation-panel-title 
-                span 
-                  | General donations&nbsp;
-                  span.fa.fa-question-circle.fa-color-primary( data-toggle="modal" data-target="#eventsModal")
-              p 
-                a(href="#" data-toggle="modal" data-target="#paymentTypesModal") What are my payment options?
-              include paymentsModal
-              include searchInput
-              .dropdown
-                button.btn.btn-link.dropdown-toggle(id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true")
-                  strong
-                    | Category&nbsp;
-                    span.fa.fa-chevron-down
-                ul.dropdown-menu(aria-labelledby="dropdownMenu1")
-                  li
-                    a(href="#") Category 1
-                  li
-                    a(href="#") Category 2
-                  li
-                    a(href="#") Category 3
-                  li
-                    a(href="#") Category 4
-                  li
-                    a(href="#") Category 5
-              .dropdown
-                button.btn.btn-link.dropdown-toggle(id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true")
-                  strong
-                    | Agency status&nbsp;
-                    span.fa.fa-chevron-down
-                ul.dropdown-menu(aria-labelledby="dropdownMenu1")
-                  li
-                    a(href="#") Status 1
-                  li
-                    a(href="#") Status 2
-                  li
-                    a(href="#") Status 3
-                  li
-                    a(href="#") Status 4
-                  li
-                    a(href="#") Status 5
-              ul.list-inline.search-items
-                li.search-item#item12345
-                  .fa.fa-times.fa-color-danger
-                  | &nbsp;item1
-                li.search-item#item6789
-                  .fa.fa-times.fa-color-danger
-                  | &nbsp;item2
-                li.search-item#item01234
-                  .fa.fa-times.fa-color-danger
-                  | &nbsp;item3
-                li.search-item#item56789
-                  .fa.fa-times.fa-color-danger
-                  | &nbsp;item4
-                li.search-item#clear-all
-                  .fa.fa-times.fa-color-danger
-                  | &nbsp;Clear all
-          .employee-giving-pagination
-            include pagination
-          .employee-giving-search-results-panels
-            - var name = 'Abused Deaf Women\'s Advocacy Services';
-            - var id = '9615';
-            - var description = 'Women, Housing & Employment Mental Health, Disablities & Substance abuse';
-            - var added = false;
+          .capacity-charge-search.call-out-text.call-out-text-success.m-t-0
+            include searchInput
+            p.m-t-md
+              a(href="#") How do I find my account and site number?
+            ul.list-inline.search-items
+              li.search-item#item12345
+                .fa.fa-times.fa-color-danger
+                | &nbsp;item1
+              li.search-item#item6789
+                .fa.fa-times.fa-color-danger
+                | &nbsp;item2
+              li.search-item#item01234
+                .fa.fa-times.fa-color-danger
+                | &nbsp;item3
+              li.search-item#item56789
+                .fa.fa-times.fa-color-danger
+                | &nbsp;item4
+              li.search-item#clear-all
+                .fa.fa-times.fa-color-danger
+                | &nbsp;Clear all
+          div
+            - var accountNum = '305671';
+            - var siteNum = '550929';
             include panels
-            - var name = 'Advocates for Success in Africa';
-            - var id = '9713';
-            - var description = 'Children & youth, International relief & development, Education & literacy';
-            - var added = true;
-            include panels
-            - var name = 'African Wildlife Foundation';
-            - var id = '2506';
-            - var description = 'Environment Animals';
-            - var added = false;
-            include panels
-          .employee-giving-pagination
-            include pagination
+      .row
+        .col-sm-6
+          button.btn.btn-success.btn-block Proceed to checkout
     .col-md-4.visible-md-block.visible-lg-block
       include cart
     include addToCartModal2
