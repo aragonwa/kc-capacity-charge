@@ -1,13 +1,13 @@
 # ePayments Capacity Charge
-[Bill details](https://kc-capacity.surge.sh)
+[Bill details](https://kc-capacity-charge.surge.sh)
 
-[Receipt](https://kc-capacity.surge.sh/receipt)
+[Receipt](https://kc-capacity-charge.surge.sh/receipt)
 
-[Review cart](https://kc-capacity.surge.sh/review)
+[Review cart](https://kc-capacity-charge.surge.sh/review)
 
-[General search](https://kc-capacity.surge.sh/search)
+[General search](https://kc-capacity-charge.surge.sh/search)
 
-[Search: disabled state](https://kc-capacity.surge.sh/searchDisabled)
+[Search: disabled state](https://kc-capacity-charge.surge.sh/searchDisabled)
 
 # Updates
 8/21
