@@ -25,46 +25,61 @@
               br
               | Billing period: 12/01/2016 - 02/28/2017
           .col-sm-6
-            ul.leaders
-              li
-                span Remaining balance
-                span $6,545.70
-            ul.leaders
-              li
-                span Past due balance
-                span $0.00
-              li
-                span Las invoice amount
-                span $115.85
-              li
-                span Amount paid
-                span $115.85
-            ul.leaders
-              li
-                span Amount due 03/31/2017
-                span $0.00
-          .col-sm-6
-            button.btn.btn-default#btn-print-statement Print statement
-        hr
-        .row
-          .col-sm-10
-            p Choose the amounts to pay now:
-
-            // TODO: Change these styles
-            .review-cart
-              .review-cart-items
+            #capacity-charge-payment-summary
+              .remaining-balance
+                ul.leaders
+                  li
+                    span Remaining balance
+                    span $6,545.70
+              ul.leaders
+                li
+                  span Past due balance
+                  span $0.00
+                li
+                  span Las invoice amount
+                  span $115.85
+                li
+                  span Amount paid
+                  span $115.85
+              .amount-due
                 ul.leaders
                   li
                     span Amount due 03/31/2017
                     span $0.00
-                  li
-                    span Early discount amount
-                    span $5,666.39
-                  li
-                    span Other
-                    span
-                      .input-group
-                        div.input-group-addon $
-                        input.form-control(type="text" aria-label="Other amount" value="")
+          .col-sm-6
+            button.btn.btn-default#btn-print-last-invoice Print last invoice
+        hr
+        .row
+          .col-sm-12
+            p Choose the amounts to pay now:
+          .capacity-charge-pay-now
+            .col-sm-10
+              ul.leaders
+                li
+                  span Amount due 03/31/2017
+                  span $0.00
+            .col-sm-2
+              button.btn.btn-default(type="button")
+                | Add&nbsp;
+                .fa.fa-shopping-cart
+            .col-sm-10
+              ul.leaders
+                li
+                  span Early discount amount
+                  span $5,666.39
+            .col-sm-2
+              button.btn.btn-primary(type="button")
+                | Add&nbsp;
+                .fa.fa-shopping-cart
+            .col-sm-10
+              ul.leaders
+                li
+                  span Other
+                  span
+                    .input-group
+                      div.input-group-addon $
+                      input.form-control(type="text" aria-label="Other amount" value="")
           .col-sm-2
-            button.btn.btn-default(type="submit") Button
+            button.btn.btn-default(type="button")
+              | Add&nbsp;
+              .fa.fa-shopping-cart
