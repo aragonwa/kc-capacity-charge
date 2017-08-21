@@ -1,0 +1,21 @@
+#findSiteNumberModal.find-site-number-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='findSiteNumberModalLabel')
+  .modal-dialog(role='document' )
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') &times;
+        |         
+        h4.modal-title Find your account and site number
+      |       
+      .modal-body
+        p
+          | Locate the&nbsp;
+          strong account number&nbsp;
+          | at the upper center of your pater invoice. This identifies the property being charged.
+        p 
+          | Locate the 6 digit&nbsp;
+          strong site number&nbsp;
+          | at the lower center of your invoice. This identifies you and your billing address for the property being charged.
+        img(src="https://unsplash.it/500/900")
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Close
