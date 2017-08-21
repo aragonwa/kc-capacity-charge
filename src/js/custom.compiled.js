@@ -136,22 +136,3 @@ $('body').click(function(e) {
 $(document).keyup(function(e) {
   if (e.keyCode === 27 && $onoffcanvas.hasClass('is-open')) $onoffcanvas.onoffcanvas('hide');  // esc
 });
-var $paymentBtns = $('#addToCartModal .payment-amounts button');
-$paymentBtns.click(function(){
-  $paymentBtns.each(function(i, btn){
-    if($(btn).hasClass('btn-success')){
-      $(btn).removeClass('btn-success');
-      $(btn).addClass('btn-custom');
-    };
-  });
-  $(this).addClass('btn-success')
-});
-var $employeeGivingEvents = $('.employee-giving-event');
-$employeeGivingEvents.click(function(){
-  $employeeGivingEvents.removeClass('active');
-  $(this).addClass('active')
-});
-
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
