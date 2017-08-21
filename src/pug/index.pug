@@ -1,6 +1,6 @@
 extends includes/base
 block whichtheme
-  - var theme = 'corporate'
+  - var theme = 'environment'
 block isfullwidth
   - var colSize = 'col-md-12'
 block breadcrumb
@@ -23,7 +23,7 @@ block main-content
           .capacity-charge-search.call-out-text.call-out-text-success.m-t-0
             include searchInput
             p.m-t-md
-              a(href="#") How do I find my account and site number?
+              a(href="#" data-toggle="modal" data-target="#findSiteNumberModal") How do I find my account and site number?
             ul.list-inline.search-items
               li.search-item#item12345
                 .fa.fa-times.fa-color-danger
@@ -44,6 +44,10 @@ block main-content
             - var accountNum = '305671';
             - var siteNum = '550929';
             include panels
+            - var accountNum = '306789';
+            - var siteNum = '598765';
+            include panels
+      include findSiteNumberModal
       .row
         .col-sm-6
           button.btn.btn-success.btn-block Proceed to checkout
