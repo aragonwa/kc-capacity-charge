@@ -12,7 +12,6 @@
 # Updates
 8/21
   * Initial push
-
 ## Where are the files I need?
 ```
 dist/
