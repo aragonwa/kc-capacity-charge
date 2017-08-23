@@ -10,6 +10,8 @@
 [Search: disabled state](https://kc-capacity-charge.surge.sh/searchDisabled)
 
 # Updates
+8/23
+  * Updating styling per Beth
 8/21
   * Initial push
 ## Where are the files I need?
