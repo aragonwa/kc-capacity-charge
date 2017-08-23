@@ -23,8 +23,8 @@ block main-content
   .row.addon-row.addon-row-attached
     .col-sm-12
       .review-header
-        p
-          .fa.fa-shopping-cart &nbsp;
+        p.payment-engine-heading
+          span.fa.fa-shopping-cart &nbsp;
           | Confirm cart details
     .col-sm-12
       .review-cart
@@ -81,7 +81,7 @@ block main-content
         span.fa.fa-cc-discover
         | &nbsp;card payments
     .col-sm-12
-      button.btn.btn-success Proceed to billing
+      button.btn.btn-payment-engine Proceed to billing
 block custom-js
   if production
     script(src="/js/custom.js")
